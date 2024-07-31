@@ -17,10 +17,10 @@ expfile="sw${obs_id}${filter}_ex.img.gz"
         sed -i "s/${prev_radius}\"/${radius}\"/" source_copy.reg
 
         # Construct the output filename based on the observation ID, filter, and radius
-        outfile="maghist_${filter}_${radius}_${obs_id}_noapcorr.fits"
+        outfile="maghist_${filter}_${radius}_${obs_id}.fits"
 
         # Run uvotmaghist command with the appropriate input and output filenames
-        uvotmaghist infile="${infile}" expfile="${expfile}" srcreg=source_copy.reg bkgreg=back outfile="${outfile}" plotfile=NONE apercorr=NONE
+        uvotmaghist infile="${infile}" expfile="${expfile}" srcreg=source_copy.reg bkgreg=back outfile="${outfile}" plotfile=NONE
         prev_radius=${radius}
       done
       rm source_copy.reg
