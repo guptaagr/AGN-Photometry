@@ -25,3 +25,10 @@ Tables folder:
 
 - 2MASS RA (degrees) and 2MASS Dec (degrees): These are the RA and Dec values derived from the 2MASS All-Sky Extended Source Catalog (XSC). This catalog provides accurate RA and Dec coordinates for extended objects in the sky, which are cross-referenced to match the sources in the FITS files.
 
+2) 2MASS table:
+- Most of the table is just the output derived from a tabular search on the 2MASS All-Sky Extended Source Catalog.
+
+- E(B-V) and E(B-V) errors: The values in this column are derived through individual source searches using the Galactic Dust Reddening and Extinction tool https://irsa.ipac.caltech.edu/applications/DUST/
+
+- 3 sources PG0804+761, PG0844+349 and RBS1124 were not present in the 2MASS XSC, so their IR magnitudes have been derived from the Point Source Catalog and added under j_m_5, h_m_5 and k_m_5 columns. However, the magnitudes of these 3 sources are calculated using a 4" aperture so keep that in mind when using these values for other purposes.
+
