@@ -32,3 +32,4 @@ Tables folder:
 
 - 3 sources PG0804+761, PG0844+349 and RBS1124 were not present in the 2MASS XSC, so their IR magnitudes have been derived from the Point Source Catalog and added under j_m_5, h_m_5 and k_m_5 columns. However, the magnitudes of these 3 sources are calculated using a 4" aperture so keep that in mind when using these values for other purposes.
 
+- The magnitudes used in this analysis are PSF-corrected magnitudes, as indicated by the field name ‘_m’ in the dataset.
